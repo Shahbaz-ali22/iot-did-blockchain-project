@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# IoT DID Blockchain Project
 
-# Run and deploy your AI Studio app
+## 📌 Overview
+This project is a web-based application for secure IoT device onboarding using blockchain concepts.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
+- Device registration system
+- Blockchain-based identity (hashing)
+- Admin dashboard
+- Audit logs
+- Network activity monitoring
 
-View your app in AI Studio: https://ai.studio/apps/df5bc2ca-230f-4b8f-bd73-4095204cd425
+## 🛠️ Tech Stack
+- React + TypeScript
+- Vite
+- HTML, CSS
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
+## ▶️ Run Locally
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   npm install
+
+2. Run the project:
+   npm run dev
+
+## 📊 Description
+This system assigns a unique identity to IoT devices and verifies them before allowing access, ensuring secure onboarding.
+
+## 👨‍💻 Author
+Shahbaz Ali
