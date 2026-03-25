@@ -1,0 +1,5 @@
+{
+  "name": "IoT-DID: Blockchain IoT Onboarding",
+  "description": "A decentralized identity framework for secure IoT device onboarding and authentication using blockchain-inspired tamper-proof registries.",
+  "requestFramePermissions": []
+}
