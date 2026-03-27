@@ -73,6 +73,10 @@ We developed a **Blockchain-based Identity System** where:
 
 ---
 
+## 📊 Project Dashboard Preview
+
+---
+
 ## ▶️ Run Locally
 
 ```bash
