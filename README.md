@@ -75,7 +75,7 @@ We developed a **Blockchain-based Identity System** where:
 
 ## 📊 Project Dashboard Preview
 
-![Dashboard](https://github.com/Shahbaz-ali22/iot-did-blockchain-project/blob/d2fdee9c6cc83d2ccaa30de1c639192fe1444fac/Screenshot%202026-03-25%20124812.png?raw=true)
+![Dashboard](https://github.com/Shahbaz-ali22/iot-did-blockchain-project/blob/e62d2a43f71a7d09cd9b58f57bdd498fabf60bda/Screenshot%202026-03-25%20125027.png)
 ---
 
 ## ▶️ Run Locally
