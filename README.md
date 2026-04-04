@@ -3,7 +3,13 @@
 > Secure IoT Device Onboarding using Blockchain Concepts
 
 ---
+# 🔐 IoT DID Blockchain Project
 
+> Secure IoT Device Onboarding using Blockchain Concepts
+
+🌐 **Live Demo:** https://did-iot-simulator.netlify.app/
+
+---
 ## 📌 Overview
 The rapid growth of IoT devices has introduced serious security challenges, especially during the onboarding and authentication phase. Traditional systems rely on centralized registries, default credentials, or shared keys, making them highly vulnerable to attacks such as unauthorized access, device impersonation, and data tampering.
 
