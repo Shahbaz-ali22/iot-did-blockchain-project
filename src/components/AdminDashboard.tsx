@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { blockchain } from '../services/blockchain';
 import { IoTDevice, TrafficStats } from '../types';
-import { Shield, ShieldAlert, Trash2, Plus, RefreshCw } from 'lucide-react';
+import { Shield, ShieldAlert, Trash2, Plus, RefreshCw, Copy } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -145,7 +145,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ devices, onRefre
                 <tr key={device.id} className="hover:bg-white/[0.02] transition-colors group">
                   <td className="px-6 py-4">
                     <div className="flex flex-col">
-                      <span className="text-xs font-mono text-emerald-400/80">{device.id}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-mono text-emerald-400/80">{device.id}</span>
+                        <button
+                          onClick={() => navigator.clipboard.writeText(device.id)}
+                          className="p-1 text-white/20 hover:text-emerald-400 transition-colors"
+                          title="Copy DID"
+                        >
+                          <Copy className="w-3 h-3" />
+                        </button>
+                      </div>
                       <span className="text-[10px] font-mono text-white/20 truncate max-w-[200px]">PK: {device.publicKey}</span>
                     </div>
                   </td>

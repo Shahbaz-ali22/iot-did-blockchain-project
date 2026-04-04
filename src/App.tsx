@@ -9,8 +9,10 @@ import { network } from './services/network';
 import { IoTDevice, AuditEvent, MQTTMessage, TrafficStats } from './types';
 import { Shield, Database, LayoutDashboard, Settings, LogOut, Trash2, Activity } from 'lucide-react';
 import { motion } from 'motion/react';
+import IntroScreen from "./components/IntroScreen";
 
 export default function App() {
+  const [showIntro, setShowIntro] = useState(true);
   const [devices, setDevices] = useState<IoTDevice[]>([]);
   const [auditTrail, setAuditTrail] = useState<AuditEvent[]>([]);
   const [activeTab, setActiveTab] = useState<'dashboard' | 'emulator'>('dashboard');
@@ -50,6 +52,10 @@ export default function App() {
       refreshData();
     }
   };
+
+  if (showIntro) {
+    return <IntroScreen onFinish={() => setShowIntro(false)} />;
+  }
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-emerald-500/30">
@@ -126,7 +132,7 @@ export default function App() {
           <div className="flex items-center gap-4 ml-auto">
             <div className="hidden md:flex flex-col items-end">
               <span className="text-xs font-medium text-white">Admin Console</span>
-              <span className="text-[10px] font-mono text-white/40">shahbaz19370@gmail.com</span>
+              <span className="text-[10px] font-mono text-white/40">admin@iot.local</span>
             </div>
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-400 to-blue-500 p-0.5">
               <div className="w-full h-full rounded-full bg-[#0a0a0a] flex items-center justify-center">
