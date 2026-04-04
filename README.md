@@ -2,11 +2,6 @@
 
 > Secure IoT Device Onboarding using Blockchain Concepts
 
----
-# 🔐 IoT DID Blockchain Project
-
-> Secure IoT Device Onboarding using Blockchain Concepts
-
 🌐 **Live Demo:** https://did-iot-simulator.netlify.app/
 
 ---
