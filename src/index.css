@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
 @layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+  }
+
+  #root {
+    min-height: 100vh;
+    background-color: #000;
+  }
+
   .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
   }
