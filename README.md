@@ -1,86 +1,77 @@
-# 🔐 IoT DID Blockchain Project
+# 🔐 Blockchain-Based Decentralized Identity for Secure IoT Device Onboarding
 
-> Secure IoT Device Onboarding using Blockchain Concepts
+> A web-based security prototype exploring decentralized identity, device authorization, revocation, and auditability for IoT environments.
 
-🌐 **Live Demo:** https://did-iot-simulator.netlify.app/
+[![React](https://img.shields.io/badge/React-TypeScript-61DAFB?logo=react&logoColor=black)](https://react.dev/) [![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite&logoColor=white)](https://vite.dev/) [![Status](https://img.shields.io/badge/Status-Educational%20Prototype-orange)](https://github.com/Shahbaz-ali22/iot-did-blockchain-project)
 
----
-## 📌 Overview
-The rapid growth of IoT devices has introduced serious security challenges, especially during the onboarding and authentication phase. Traditional systems rely on centralized registries, default credentials, or shared keys, making them highly vulnerable to attacks such as unauthorized access, device impersonation, and data tampering.
+## 🎯 Why this project?
 
-This project presents a **web-based prototype** that demonstrates a **blockchain-inspired decentralized identity (DID) system** for secure IoT device onboarding. Instead of relying on a central authority, each device is assigned a **unique cryptographic identity (hash)**, ensuring that its identity cannot be altered or forged.
+IoT deployments need trustworthy device identity and access control. This project demonstrates a blockchain-inspired workflow in which each device receives a unique hash-based identity, is verified before access, and can be revoked when compromised.
 
-The system simulates a **blockchain ledger**, where device identities and their authorization status are stored in a tamper-resistant structure. During the onboarding process, every device must be verified against this ledger before being allowed to interact with the network.
+## ✨ Features
 
-Additionally, the system provides:
-- **Device revocation**, allowing compromised devices to be removed instantly  
-- **Audit logs**, ensuring transparency and traceability of all actions  
-- **Admin dashboard**, for monitoring and controlling the network  
+- Device registration and identity generation
+- Hash-based DID-style identity simulation
+- Device authorization and revocation
+- Simulated tamper-resistant ledger
+- Audit logs and network monitoring
+- Admin dashboard
+- Device emulator for testing
 
-Although this implementation is a **prototype**, it effectively demonstrates how blockchain principles can be applied to enhance IoT security. The system can be extended to integrate real blockchain platforms such as Ethereum or Hyperledger for production-level deployment.
+## 🧠 Security Concepts
 
----
+**Identity & Access Management • Authentication • Authorization • Revocation • Auditability • IoT Security • Blockchain Concepts**
 
-## 🎯 Problem Statement
-Traditional IoT systems suffer from:
-- Weak authentication mechanisms
-- Use of default/shared credentials
-- Centralized registries (easy to hack)
+## 🔄 Workflow
 
----
-
-## 💡 Solution
-We developed a **Blockchain-based Identity System** where:
-- Each device gets a **unique identity (hash)**
-- Devices are **verified before access**
-- Unauthorized devices are blocked
-- All actions are recorded for transparency
-
----
-
-## ⚙️ Features
-- 🔹 Device Registration System  
-- 🔹 Blockchain-based Identity (Hashing)  
-- 🔹 Admin Dashboard  
-- 🔹 Audit Logs (Tracking activity)  
-- 🔹 Device Revocation  
-- 🔹 Network Monitoring  
-
----
-
-## 🧠 How It Works
-1. Device is registered with a unique name  
-2. System generates a **hash-based identity**  
-3. Identity is stored in a simulated blockchain ledger  
-4. Gateway verifies device before allowing access  
-5. All actions are logged in audit trail  
-
----
+```text
+Device Registration → Identity Generation → Ledger Storage
+        ↓                    ↓                    ↓
+   Verification ← Authorization Check ← Audit Logging
+        ↓
+  Network Access / Revocation
+```
 
 ## 🛠️ Tech Stack
-- ⚛️ React + TypeScript  
-- ⚡ Vite  
-- 🎨 HTML, CSS  
-- 🔐 Hashing (Blockchain Simulation)  
 
----
+- React + TypeScript
+- Vite
+- HTML / CSS
+- Hashing & blockchain concepts
 
-## 👨‍💻 Team Members
+## 🌐 Demo
 
-- **Shahbaz Ali** (Team Leader)  
-- **Harshit**  
-- **Himanshu**  
-- **Kartik Yadav**
-
----
-
-## 📊 Project Dashboard Preview
-
-![Dashboard](https://github.com/Shahbaz-ali22/iot-did-blockchain-project/blob/e62d2a43f71a7d09cd9b58f57bdd498fabf60bda/Screenshot%202026-03-25%20125027.png)
----
+**Live demo:** https://did-iot-simulator.netlify.app/
 
 ## ▶️ Run Locally
 
 ```bash
+git clone https://github.com/Shahbaz-ali22/iot-did-blockchain-project.git
+cd iot-did-blockchain-project
 npm install
 npm run dev
+```
+
+## 📸 Preview
+
+![Dashboard](https://github.com/Shahbaz-ali22/iot-did-blockchain-project/blob/main/Screenshot%202026-03-25%20125027.png)
+
+## 🚧 Limitations
+
+This is an educational prototype. The ledger is simulated and is not a production blockchain or standards-compliant DID implementation.
+
+## 🔭 Future Improvements
+
+- Integrate Ethereum or Hyperledger
+- Add standards-compliant DIDs and verifiable credentials
+- Add device attestation
+- Add automated security testing
+- Strengthen RBAC and authentication
+
+## 👥 Team
+
+Shahbaz Ali • Harshit • Himanshu • Kartik Yadav
+
+## 📄 License
+
+See the repository license for usage terms.
